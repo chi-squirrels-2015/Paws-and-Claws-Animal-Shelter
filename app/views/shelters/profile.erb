@@ -1,0 +1,19 @@
+<div class="container">
+  <% @cats.each do |cat| %>
+  <div class="animal_pad">
+    <p><%=cat.name%></p>
+    <img src="/imgs/cats/<%=cat.img_id%>.jpg">
+  </div>
+  <%end%>
+
+</div>
+
+<div class="container">
+  <% @dogs.each do |dog| %>
+  <div class="animal_pad">
+    <p><%=dog.name%></p>
+    <img src="/imgs/dogs/<%=dog.img_id%>.jpg">
+  </div>
+  <%end%>
+
+</div>

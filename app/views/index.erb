@@ -1,0 +1,5 @@
+<div class="container">
+  <% @shelters.each do |shelter| %>
+    <a href="/shelters/<%= shelter.id%>"><%= shelter.name %></a>
+  <%end%>
+</div>
